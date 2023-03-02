@@ -8,13 +8,10 @@ In order to handle **ALL** exception, we will need to register a custom **Error 
 
 ## Installation
 
-1) Install the bundle using composer 
 
-```bash
-composer require acseo/aierrorexplained-bundle
 ```
 
-2) Declare the Error Handler in composer.json
+1) Declare the Custom Error Handler in composer.json
 
 ```yaml
     ...
@@ -27,7 +24,13 @@ composer require acseo/aierrorexplained-bundle
     ...
 ```
 
-3) Enable the bundle in you Symfony project
+2) Install the bundle using composer
+
+```bash
+composer require --dev acseo/aierrorexplained-bundle
+```
+
+3) Enable the bundle in you Symfony project (already done with Flex)
 
 ```php
 
@@ -49,8 +52,9 @@ OPENAI_CLIENT_KEY=sk-XXXXXX
 5) Declare a custom Error Controller
 ```yaml
 # config/packages/framework.yml
-framework:
-    error_controller: ACSEO\AIErrorExplainedBundle\Controller\ErrorController::show
+when@dev:
+    framework:
+        error_controller: ACSEO\AIErrorExplainedBundle\Controller\ErrorController::show
 ```
 
 And tadaaa 🎉, you are ready to have errors !
