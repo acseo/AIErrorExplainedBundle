@@ -58,3 +58,11 @@ when@dev:
 ```
 
 And tadaaa 🎉, you are ready to have errors !
+
+## What you should see
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="doc/ACSEOAIErrorExplainedBundle.png">
+  <source media="(prefers-color-scheme: light)" srcset="doc/ACSEOAIErrorExplainedBundle.png">
+  <img src="doc/ACSEOAIErrorExplainedBundle.png">
+</picture>
