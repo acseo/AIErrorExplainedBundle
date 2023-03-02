@@ -86,10 +86,9 @@ EOF;
     public function renderSolution(string $solution)
     {       
         $solution = "<?php\n".$solution;
+        $solution = htmlspecialchars_decode($solution);
         $solution = highlight_string($solution, true);
-
         $solution = nl2br($solution);
-
         $solution = str_replace(['<span style="color: #0000BB">&lt;?php<br /><br />Fix</span><span style="color: #007700">:<br /></span>'], [''], $solution);
 
         $template = <<<EOF
