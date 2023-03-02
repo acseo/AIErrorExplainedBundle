@@ -8,9 +8,6 @@ In order to handle **ALL** exception, we will need to register a custom **Error 
 
 ## Installation
 
-
-```
-
 1) Declare the Custom Error Handler in composer.json
 
 ```yaml
