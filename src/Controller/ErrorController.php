@@ -3,10 +3,9 @@
 namespace ACSEO\AIErrorExplainedBundle\Controller;
 
 use ACSEO\AIErrorExplainedBundle\ErrorRenderer\HtmlErrorRendererWithAISuggestion;
-use Symfony\Component\HttpKernel\Controller\ErrorController as ControllerErrorController;
 use Symfony\Component\HttpFoundation\Response;
 
-class ErrorController extends ControllerErrorController
+class ErrorController
 {
     public function show(\Throwable $exception, $logger)
     {
