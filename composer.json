@@ -1,0 +1,32 @@
+{
+    "name": "acseo/aierrorexplained-bundle",
+    "description": "This bundle provides AI explaination when an error has occured",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "keywords": [
+        "ai",
+        "exception",
+        "devtools"
+    ],    
+    "homepage": "https://github.com/acseo/AIErrorExplainedBundle",    
+    "authors": [
+        {
+            "name": "Nicolas Potier",
+            "email": "nicolas.potier@acseo.fr"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "openai-php/client": "^0.3"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": { "ACSEO\\AIErrorExplainedBundle\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ACSEO\\AIErrorExplainedBundle\\Tests\\": "tests/"
+        }
+    }
+}
